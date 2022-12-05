@@ -54,7 +54,7 @@ aoc_api = AocApi.new(day)
 File.write(instructions_file, aoc_api.download_instructions)
 File.write(input_file, aoc_api.download_input)
 
-if !File.exists?(test_file)
+if File.zero?(test_file)
   test_content = <<~TEST_CONTENT
 require_relative "../../test_helper"
 require_relative "../#{day_file_name}"
@@ -68,7 +68,7 @@ TEST_CONTENT
   File.write(test_file, test_content)
 end
 
-if !File.exists?(main_file)
+if File.zero?(main_file)
   main_content = <<~MAIN_CONTENT
 require_relative "#{day_file_name}"
 
