@@ -75,7 +75,7 @@ require_relative "#{day_file_name}"
 puts "=" * 40
 puts "Advent of Code - Day $day"
 puts "=" * 40
-input = File.read("input.txt")
+input = File.read(File.join(__dir__, "input.txt"))
 puts "Solution: TODO"
 MAIN_CONTENT
   File.write(main_file, main_content)
