@@ -73,7 +73,7 @@ if File.zero?(main_file)
 require_relative "#{day_file_name}"
 
 puts "=" * 40
-puts "Advent of Code - Day $day"
+puts "Advent of Code - Day #{day}"
 puts "=" * 40
 input = File.read(File.join(__dir__, "input.txt"))
 puts "Solution: TODO"
