@@ -1,5 +1,6 @@
 require "minitest/autorun"
 require "minitest/pride"
+require "pry"
 
 class Minitest::Test
   def self.test(name, &block)
